@@ -72,7 +72,7 @@
     public boolean removeFollowee(String name) {
         for (int i = 0; i < fCount; i++)
             {
-                if (follows[i].toLowerCase().equals(name))
+                if (follows[i].toLowerCase().equals(name.toLowerCase()))
                 {
                     for (int j = i; j < fCount - 1; j++)
                     {
