@@ -55,7 +55,7 @@
     /** Makes this user follow the given name. If successful, returns true. 
      *  If this user already follows the given name, or if the follows list is full, does nothing and returns false; */
     public boolean addFollowee(String name) {
-        if (!follows(name))
+        if (!follows(name) && this.name != name)
         {
             if (fCount < maxfCount)
             {
